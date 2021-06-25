@@ -11,5 +11,9 @@
     "Chatbot"
   ],
   "author": "Ali Alhashimi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "yargs": "^17.0.1"
+  }
 }
