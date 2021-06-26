@@ -22,15 +22,21 @@ app.post('/currentweather', function (_req, _res) {
   let url = `https://api.weatherbit.io/v2.0/current?city=${_req.body.city}&country=${_req.body.country}&key=${apiKey}`;
   request(url, function (err,response, body) {
     if(err){
-      console.log('error:', error);
+      _res.json("");
     } else {
       console.log(_req.body.city);
-      let weather = JSON.parse(response.body);
+     let weather = JSON.parse(response.body);
       console.log(weather.data[0]);
       _res.json(weather.data[0]);
     }
   });
 })
+
+app.post('/weathertest', function (req, res) {
+  console.log(req.body);
+  res.json(req.body);
+})
+
 
 
 ///Gets the Weather forcast for a city
