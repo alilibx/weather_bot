@@ -19,6 +19,7 @@
     "express": "^4.17.1",
     "ibm-watson": "^6.1.1",
     "request": "^2.88.2",
+    "uuidv4": "^6.2.10",
     "watson-developer-cloud": "^4.0.1",
     "yargs": "^17.0.1"
   }

@@ -2,6 +2,7 @@ const request = require('request');
 const argv = require('yargs').argv;
 const express = require('express');
 const bodyparser = require('body-parser');
+const cloudantdb = require('./cloudant');
 
 
 var app = express();
@@ -27,6 +28,7 @@ app.post('/currentweather', function (_req, _res) {
       console.log(_req.body.city);
      let weather = JSON.parse(response.body);
       console.log(weather.data[0]);
+      cloudantdb.createLogWebhok(JSON.stringify(_req.body),JSON.stringify(weather));
       _res.json(weather.data[0]);
     }
   });
