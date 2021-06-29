@@ -1,5 +1,5 @@
 const Cloudant = require('@cloudant/cloudant');
-const vcap = require('./vcab-local.json');
+const vcap = require('../vcab-local.json');
 const { uuid } = require('uuidv4');
 
 exports.createLogWebhok = async function createLogWebhok(request, response) {
