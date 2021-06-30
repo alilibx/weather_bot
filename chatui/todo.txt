@@ -1,0 +1,10 @@
+1. Setup Redux - to manage app state => Done
+2. Setup chat => Done
+3. Setup Reducers and action - action will call the reducer to maintin state  => Done
+4. chat quque to store chat messages => Done
+5. Display the messages to the user => Done
+6. Get and handle session ids  => Done
+7. Handle sending users message to the api 
+8. adding bot message to the chat queue
+9. Formating
+10. Make sure that the chat sessions are stored in cloudant

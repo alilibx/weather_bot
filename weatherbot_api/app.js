@@ -1,6 +1,7 @@
 
 const express = require('express');
 const bodyparser = require('body-parser');
+var cors = require('cors');
 
 require('dotenv').config();
 const weathercont = require('./controllers/weathercontroller');
@@ -8,7 +9,7 @@ const botcont = require('./controllers/watsoncontroller');
 
 var app = express();
 app.use(bodyparser.json());
-
+app.use(cors());
 //Get Current Weather
 app.post('/currentweather',weathercont.currentweather)
 

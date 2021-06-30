@@ -11,18 +11,19 @@ const assistant = new AssistantV2({
 
   // Endpoint to be call from the client side
 exports.getMessage = async (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
+res.header("Access-Control-Allow-Origin", "*");
 res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 //Payload 
 payload = {
   assistantId: process.env.ASSISTANT_ID,
-  sessionId: req.body.session_id,
+  sessionId: req.headers.session_id,
   input:{
     message_type:"text",
     text: req.body.input
   }
 }
 console.log(req.body);
+console.log(req.headers.session_id);
 //If Success
 try{
   const message = await assistant.message(payload);
@@ -44,7 +45,7 @@ new Promise((resolve,reject) => {
       }).then(response => {
                   console.log(JSON.stringify(response.result, null, 2));
                   cloudantdb.createLogWebhok("No Payload",response);
-                  resolve(response);
+                  resolve(response.result );
                 })
                 .catch(err => {
                     console.log(err);

@@ -1,5 +1,5 @@
-weatherbot_api/node_modules
 weatherbot_api/node_modules/.package-lock.json
+weatherbot_api/node_modules/.bin/acorn
 weatherbot_api/node_modules/.bin/atob
 weatherbot_api/node_modules/.bin/browserslist
 weatherbot_api/node_modules/.bin/cdl
@@ -4985,3 +4985,15 @@ weatherbot_api/node_modules/date-fns/esm/fp/isSaturday/index.js
 weatherbot_api/node_modules/date-fns/esm/fp/isSaturday/index.js.flow
 weatherbot_api/node_modules/date-fns/esm/fp/isSaturday/package.json
 weatherbot_api/node_modules/date-fns/esm/fp/isSunday/index.d.ts
+weatherbot_api/node_modules/date-fns/esm/fp/isSunday/index.js
+weatherbot_api/node_modules/date-fns/esm/fp/isSunday/index.js.flow
+weatherbot_api/node_modules/date-fns/esm/fp/isSunday/package.json
+weatherbot_api/node_modules/date-fns/esm/fp/isThursday/index.d.ts
+weatherbot_api/node_modules/date-fns/esm/fp/isThursday/index.js
+weatherbot_api/node_modules/date-fns/esm/fp/isThursday/index.js.flow
+weatherbot_api/node_modules/date-fns/esm/fp/isThursday/package.json
+weatherbot_api/node_modules/date-fns/esm/fp/isTuesday/index.d.ts
+weatherbot_api/node_modules/date-fns/esm/fp/isTuesday/index.js
+weatherbot_api/node_modules/date-fns/esm/fp/isTuesday/index.js.flow
+weatherbot_api/node_modules/date-fns/esm/fp/isTuesday/package.json
+weatherbot_api/node_modules/date-fns/esm/fp/isValid/index.d.ts
