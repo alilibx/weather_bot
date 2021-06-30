@@ -4,8 +4,9 @@
 
 input{
   border: 0;
-  border-bottom: 1px solid black;   
-  height: 20px;
+  border: 1px solid black;   
+  border-radius: 30px;
+  height: 30px;
   width: 400px;
   outline: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,7 +16,7 @@ input{
 
 
 .bot{
-  background-color: rgb(152, 85, 212);
+  background-color: rgb(29, 58, 227);
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 10px;
@@ -27,7 +28,7 @@ input{
 }
 
 .user{
-  background-color: rgb(0, 180, 160);
+  background-color: rgb(157, 157, 157);
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 10px; 
