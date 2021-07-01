@@ -21,6 +21,8 @@ the weather in a certain city at a certain time.
 * npm
 * react
 * ngrok
+* IBM Wastson Assistant 
+* IBM Cloudant Database
   
 ### Installation
 
@@ -41,7 +43,7 @@ the weather in a certain city at a certain time.
 
 1. Run weatherbot_api
    ```sh
-   cd weatherbot_api
+   cd <Path/to/weather_bot/project>/weatherbot_api
    nodemon app.js
    ```
    API will start on port 9000
@@ -57,7 +59,7 @@ the weather in a certain city at a certain time.
     Forwarding                    https://9c42f142a819.ngrok.io -> http://localho                                                                
    ```
 4. Setup Watson Assistant and Cloudant Db
-   <a href=https://cloud.ibm.com/> IBM Cloud/a>
+   <a href=https://cloud.ibm.com> IBM Cloud </a>
 5. Import bot Skill (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) to the Watson Assitant
 
 5. Run Chatui react app from command
