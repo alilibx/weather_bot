@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ali Alhashimi - [@your_twitter](https://twitter.com/alilibx) - alifaisalelz@gmail.com
+Ali Alhashimi - [@alilibx](https://twitter.com/alilibx) - alifaisalelz@gmail.com
 
 Project Link: [https://github.com/alilibx/weather_bot.git](https://github.com/alilibx/weather_bot.git)
 
