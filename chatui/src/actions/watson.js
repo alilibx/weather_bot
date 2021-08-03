@@ -11,6 +11,9 @@ import {
 //Import Axios 
 import axios from "axios";
 
+//Import Store
+import store from "../store.js";
+
 // functions handleing user messages
 export const userMessage = (message) => async (dispatch) =>{
     try{
@@ -40,8 +43,12 @@ export const sendMessage = (message, sessionid) => async (dispatch) => {
         const body = {input:message}
         const res = await axios.post("http://localhost:9000/ask", body, {headers: headers});
         console.log(res.data);
+        if(res.data.includes("Try Again")){
+            store.dispatch(createSession());
+        }
         dispatch({type:MESSAGE_SUCCESS, payload: res.data});
     } catch (err) {
         dispatch({type:MESSAGE_FAIL});
+        
     }
 }

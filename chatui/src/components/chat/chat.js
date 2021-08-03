@@ -19,7 +19,7 @@ const Chat = ({chat, userMessage, sendMessage}) => {
     const handleClick = async (e) =>{
         const code = e.keyCode || e.which;
 
-        if(code===13)
+        if(code===13 && e.target.value !== "")
         {
             console.log(message);
             userMessage(message);

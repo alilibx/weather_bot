@@ -21,21 +21,14 @@ exports.getCurrentWeather = function (_req, _res) {
     } else {
         console.log(_req.body.city);
         console.log(_req.body.country);
-        var weather;
-        if(response) {
-          try {
-             weather = JSON.parse(response.body);
-             console.log("The Weather Data Line 25");
-             console.log(weather.data[0]);
-             cloudantdb.createLogWebhok(JSON.stringify(_req.body),JSON.stringify(weather));
-             _res.header("Access-Control-Allow-Origin", "*");
-             _res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-             _res.status(200);
-             _res.json(weather.data[0]);
-          } catch(e) {
-            _res.json("Failed to get weather data, please try again.");
-          }
-        }
+     let weather = JSON.parse(response.body);
+     console.log("The Weather Data Line 25");
+      console.log(weather.data[0]);
+      cloudantdb.createLogWebhok(JSON.stringify(_req.body),JSON.stringify(weather));
+      _res.header("Access-Control-Allow-Origin", "*");
+      _res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      _res.status(200);
+      _res.json(weather.data[0]);
     }
   });
 }catch(err){

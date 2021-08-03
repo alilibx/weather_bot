@@ -11,10 +11,10 @@ var app = express();
 app.use(bodyparser.json());
 app.use(cors());
 //Get Current Weather
-app.post('/currentweather',weathercont.currentweather)
+app.post('/currentweather',weathercont.getCurrentWeather)
 
 //Get Weather Forecast 
-app.post('/weatherforecast', weathercont.weatherforecast)
+app.post('/weatherforecast', weathercont.getWeatherForecast)
 
 app.get('/', function (req, res) {
   res.send('It Works');

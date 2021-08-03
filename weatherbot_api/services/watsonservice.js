@@ -33,7 +33,12 @@ try{
   
   //If Failed
 }catch(err){
-  res.send("There was an error processing your request, Refresh page to create a new session..");
+  if(err.toString().includes("Invalid Session") || err.toString().includes("sessionid")|| err.toString().includes("sessionId")){
+    res.send("There was an error processing your request, Try Again.");
+  }
+  else{
+  res.send("There was an error processing your request, Please contact support..");
+}
   console.log("Session Error:"+err);
 }
 
