@@ -62,12 +62,12 @@ the weather in a certain city at a certain time.
 3. Setup Watson Assistant and Cloudant Db
    <a href=https://cloud.ibm.com> IBM Cloud </a>
 4. Import bot Skill (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) to the Watson Assitant
-   </br> a. Open IBM Watson Assistant service that you have created (In my case it is "aliweatherbot") 
-   </br> b. Then Create an assitant and enter a name for your assitant (In My Case "theassistant")
-   </br> c. Click on Launch Watson Assitant and on the left side menu click on skills and then Create Skill 
+   </br></br> a. Open IBM Watson Assistant service that you have created (In my case it is "aliweatherbot") 
+   </br></br> b. Then Create an assitant and enter a name for your assitant (In My Case "theassistant")
+   </br></br> c. Click on Launch Watson Assitant and on the left side menu click on skills and then Create Skill 
             The Choose dialog skill and cick next, then from teh tabs select Upload Skill and select skill file 
             (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) 
-   </br> d. The goto webhooks and paste the ngrok https URL to that and add "/currentweather" after the URl which will be 
+   </br></br> d. The goto webhooks and paste the ngrok https URL to that and add "/currentweather" after the URl which will be 
              "https://9c42f142a819.ngrok.io/currentweather"
 
 5. Then goto the watson assistant service and create new credentaial and copy these credentials then paste the credentials in the .env file in the <Path/to/weather_bot/project>/weatherbot_api project
