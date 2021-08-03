@@ -79,8 +79,6 @@ the weather in a certain city at a certain time.
       WEATHER_API_BASE_URL=https://api.weatherbit.io/v2.0/
    ```
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=sXvjZ9QQ-ik "Create IBM Watson Assistant, and Setup and Import Skill and Configure Webhook and Node JS API)
-
 6. Run Chatui react app from command
    ```sh
    cd chatui
@@ -89,6 +87,9 @@ the weather in a certain city at a certain time.
    chatui will start on port 3000 (you can go to app.js to change port)
    
 . Goto localhost:3000 in the broswer to use the chatbot
+
+
+[![Create IBM Watson Assistant, and Setup and Import Skill and Configure Webhook and Node JS API](https://user-images.githubusercontent.com/6030333/128094563-93744edf-b550-4a06-ba75-f6310c917f5a.png)](https://www.youtube.com/watch?v=sXvjZ9QQ-ik "Create IBM Watson Assistant, and Setup and Import Skill and Configure Webhook and Node JS API")
 
 
 <!-- LICENSE -->
