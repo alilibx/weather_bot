@@ -55,12 +55,18 @@ the weather in a certain city at a certain time.
    ```
    ngrok will show you an https public url that looks like below 
     ```sh
-    Forwarding                    http://9c42f142a819.ngrok.io -> http://localhos
-    Forwarding                    https://9c42f142a819.ngrok.io -> http://localho                                                                
+    Forwarding                    https://9c42f142a819.ngrok.io                                                                
    ```
+   Copy the url that start with https to the watson assitant skill follow webhook section (find details in step #6)
+
 4. Setup Watson Assistant and Cloudant Db
    <a href=https://cloud.ibm.com> IBM Cloud </a>
 5. Import bot Skill (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) to the Watson Assitant
+   a. Open IBM Watson Assistant that you have created (In my case it is "aliweatherbot")
+      ![Screen Shot 2021-08-04 at 1 14 12 AM](https://user-images.githubusercontent.com/6030333/128087084-bea1913f-5742-4a6f-93d7-19c6354194f6.png)
+
+      
+6. 
 
 5. Run Chatui react app from command
    ```sh
