@@ -39,8 +39,8 @@ export const sendMessage = (message, sessionid) => async (dispatch) => {
           }
         const body = {input:message}
         const res = await axios.post("http://localhost:9000/ask", body, {headers: headers});
-        console.log(res.data.output.generic[0].text);
-        dispatch({type:MESSAGE_SUCCESS, payload: res.data.output.generic[0].text});
+        console.log(res.data);
+        dispatch({type:MESSAGE_SUCCESS, payload: res.data});
     } catch (err) {
         dispatch({type:MESSAGE_FAIL});
     }

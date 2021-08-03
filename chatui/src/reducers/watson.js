@@ -28,6 +28,7 @@ const updateState = (state = initialState, action) => {
     case INPUT_FAIL:
       return {
         ...state,
+        messages,
       };
     case SESSION_SUCCESS:
       localStorage.setItem("session", payload["session_id"]);
@@ -47,6 +48,7 @@ const updateState = (state = initialState, action) => {
     case MESSAGE_FAIL:
       return {
         ...state,
+        messages,
       };
     default:
       return {

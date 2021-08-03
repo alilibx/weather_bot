@@ -28,11 +28,13 @@ console.log(req.headers.session_id);
 try{
   const message = await assistant.message(payload);
   cloudantdb.createLogWebhok(req.body,message["result"]);
-  res.json(message["result"]);
+  console.log("Bot Returned Message: "+message["result"].output.generic[0].text);
+  res.json(message["result"].output.generic[0].text);
+  
   //If Failed
 }catch(err){
-  res.send("There was an error processing your request");
-  console.log(err);
+  res.send("There was an error processing your request, Refresh page to create a new session..");
+  console.log("Session Error:"+err);
 }
 
 }
