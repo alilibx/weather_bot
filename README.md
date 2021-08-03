@@ -72,11 +72,11 @@ the weather in a certain city at a certain time.
 
 5. Then goto the watson assistant service and create new credentaial and copy these credentials then paste the credentials in the .env file in the <Path/to/weather_bot/project>/weatherbot_api project
    ```sh
-  ASSISTANT_IAM_APIKEY=kS0cwK4wdSnEBY3LKkPDk5orOooM3a4lAi9OXtQ3oSdF
-ASSISTANT_SERVICE_URL=https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/ea216b74-9ca0-4a03-b16c-b7cc388689f0
-ASSISTANT_ID=4d874228-10f3-4adc-ace6-4f42087fb0bf
-WEATHER_APIKEY=6115365f8f294414800126a2825e8d1f
-WEATHER_API_BASE_URL=https://api.weatherbit.io/v2.0/
+      ASSISTANT_IAM_APIKEY=kS0cwK4wdSnEBY3LKkPDk5orOooM3a4lAi9OXtQ3oSdF
+      ASSISTANT_SERVICE_URL=https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/ea216b74-9ca0-4a03-b16c-b7cc388689f0
+      ASSISTANT_ID=4d874228-10f3-4adc-ace6-4f42087fb0bf
+      WEATHER_APIKEY=6115365f8f294414800126a2825e8d1f
+      WEATHER_API_BASE_URL=https://api.weatherbit.io/v2.0/
    ```
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=sXvjZ9QQ-ik "Create IBM Watson Assistant, and Setup and Import Skill and Configure Webhook and Node JS API)
