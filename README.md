@@ -62,7 +62,7 @@ the weather in a certain city at a certain time.
 4. Setup Watson Assistant and Cloudant Db
    <a href=https://cloud.ibm.com> IBM Cloud </a>
 5. Import bot Skill (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) to the Watson Assitant
-   a. Open IBM Watson Assistant that you have created (In my case it is "aliweatherbot")
+   </br> a. Open IBM Watson Assistant that you have created (In my case it is "aliweatherbot")
       ![Screen Shot 2021-08-04 at 1 14 12 AM](https://user-images.githubusercontent.com/6030333/128087084-bea1913f-5742-4a6f-93d7-19c6354194f6.png)
 
       
