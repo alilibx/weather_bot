@@ -65,7 +65,7 @@ the weather in a certain city at a certain time.
    </br></br> a. Open IBM Watson Assistant service that you have created (In my case it is "aliweatherbot") 
    </br></br> b. Then Create an assitant and enter a name for your assitant (In My Case "theassistant")
    </br></br> c. Click on Launch Watson Assitant and on the left side menu click on skills and then Create Skill 
-            The Choose dialog skill and cick next, then from teh tabs select Upload Skill and select skill file 
+            then choose dialog skill and cick next, then from the tabs select Upload Skill and select skill file 
             (<path/to/bot/file>/bot/skils/skill-Weather-Skill.json) 
    </br></br> d. The goto webhooks and paste the ngrok https URL to that and add "/currentweather" after the URl which will be 
              "https://9c42f142a819.ngrok.io/currentweather"
