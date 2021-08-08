@@ -1,54 +1,160 @@
-.container{
-  text-align: center;
-}
-
-input{
-  border: 0;
-  border: 1px solid black;   
-  border-radius: 30px;
-  height: 30px;
-  width: 400px;
-  outline: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin-top: 20px;
-}
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
 
 
-.bot{
-  background-color: rgb(29, 58, 227);
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-radius: 10px;
-  text-align: left;
-  margin-top: 10px;
-  padding: 4px;
-  padding-left: 20px;
-  max-width: 300px;
+body,
+html {
+	font-family: Red hat Display, sans-serif;
+	font-weight: 400;
+	line-height: 1.25em;
+	letter-spacing: 0.025em;
+	color: #333;
+	background: #f7f7f7;
 }
 
-.user{
-  background-color: rgb(157, 157, 157);
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-radius: 10px; 
-  text-align: right;
-  margin-top: 10px;
-  padding: 4px;
-  padding-right: 20px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: 0;
+.center {
+	position: absolute;
+	top: 50%;
+	left: calc(50% + 1rem);
+	transform: translate(-50%, -50%);
 }
 
-.chat{
-  display: inline-block;
-  max-width: 400px;
+.headerbar {
+	width: 100%;
+    background-color: #f7f7f7;
+    z-index: 20;
+    height: 4.5rem;
+    display: flex;	
+	border-radius: 1rem 1rem 0 0;
+    position: fixed;
 }
-.historyContainer{
-  height:600px;
-  overflow: scroll;
+
+.tophead {
+	position: fixed;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    height: 4.5rem;
+    margin-top: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10;
 }
-h1{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	.name {
+		font-weight: 500;
+		margin-bottom: 0.125rem;
+	}
+
+	.message,
+	.subtitle {
+		font-size: 0.9rem;
+		color: #999;
+	}
+
+
+.chat {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	justify-content: flex-end;
+	width: 24rem;
+	height: 38rem;
+	z-index: 2;
+	box-sizing: border-box;
+	border-radius: 1rem;
+
+	background: white;
+	box-shadow: -1px 15px 15px 12px rgba(0,0,0,0.15);
+-webkit-box-shadow: -1px 15px 15px 12px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px 15px 15px 12px rgba(0,0,0,0.15);
 }
+	.contact.bar {
+		flex-basis: 3.5rem;
+		flex-shrink: 0;
+		margin: 1rem;
+		box-sizing: border-box;
+	}
+
+	.messages {
+		padding: 1rem;		
+		flex-shrink: 2;
+		overflow-y: auto;
+
+	}
+
+	.time {
+		font-size: 0.8rem;
+		background: #eee;
+		padding: 0.25rem 1rem;
+		border-radius: 2rem;
+		color: #999;
+		width: fit-content;
+		margin: 0 auto;
+	}
+	.message {
+		box-sizing: border-box;
+		padding: 0.5rem 1rem;
+		margin: 1rem;
+		background: #fff;
+		border-radius: 1.125rem 1.125rem 1.125rem 0;
+		min-height: 2.25rem;
+		width: fit-content;
+		max-width: 66%;
+
+		box-shadow: -1px 4px 20px 6px rgba(0,0,0,0.15);
+		-webkit-box-shadow: -1px 4px 20px 6px rgba(0,0,0,0.15);
+		-moz-box-shadow: -1px 4px 20px 6px rgba(0,0,0,0.15);
+
+	}
+	
+	.user {
+		margin: 1rem 1rem 1rem auto;
+		border-radius: 1.125rem 1.125rem 0 1.125rem;
+		background: #333;
+		color: white;
+	}
+
+	input {
+		box-sizing: border-box;
+		flex-basis: 4rem;
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		padding: 0 0.5rem 0 1.5rem;
+	}
+	input i {
+			font-size: 1.5rem;
+			margin-right: 1rem;
+			color: #666;
+			cursor: pointer;
+			transition: color 200ms;
+
+			
+		}
+		input i:hover {
+			color: #333;
+		}
+
+		input {
+			border: none;
+			background-image: none;
+			background-color: white;
+			padding: 1rem 1rem;
+			width: 100%;
+			margin-right: 1rem;
+
+			border-bottom-left-radius: 1.125rem;
+			border-bottom-right-radius: 1.125rem;
+			flex-grow: 2;
+			box-shadow: -1px 0px 0px 0px rgba(0,0,0,0.15);
+		-webkit-box-shadow: -1px 4px 20px 6px rgba(0,0,0,0.15);
+		-moz-box-shadow: -1px 4px 20px 6px rgba(0,0,0,0.15);
+			font-family: Red hat Display, sans-serif;
+			font-weight: 400;
+			letter-spacing: 0.025em;
+
+		}
+
+		input placeholder {
+			color: #999;
+		}

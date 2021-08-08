@@ -30,16 +30,32 @@ const Chat = ({chat, userMessage, sendMessage}) => {
 
 
     return (
-        <div className="chat">
-            <h1> The Weather Bot</h1>
-            {/* Handle Message */}
-            <div className="historContainer">
-            {chat.length === 0? "": chat.map((msg,i) =><div key={i} className={msg.type}>{msg.message}</div>)}
-            <div ref={endOfMessages}></div>
-            </div>
-            {/* Input Message */}
-            <input id="chatbox" onChange={(e)=>setMessage(e.target.value)} onKeyPress={handleClick} value={message}></input>
-        </div>
+     <div className="center">
+         <div className="headerbar">
+            <div className="tophead bar">
+      <div className="name">
+        Weather Bot
+      </div>
+      <div className="subtitle">
+        By Ali Alhashimi
+      </div>
+      </div>
+    </div>
+  <div className="chat">
+    {/* Handle Message */}
+    <div className="messages" id="chat">
+      {/* <div class="time">
+        {}
+      </div> */}
+      {chat.length === 0? "": chat.map((msg,i) =><div key={i} className={msg.type}>{msg.message}</div>)}
+      <div ref={endOfMessages}></div>
+    </div>
+    <div className="input">
+    {/* Input Message */}
+    <input onChange={(e)=>setMessage(e.target.value)} onKeyPress={handleClick} value={message} placeholder="Type your message here!"></input>
+    </div>
+  </div>
+</div>
     )
 }
 
