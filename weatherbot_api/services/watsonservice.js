@@ -34,7 +34,7 @@ try{
   //If Failed
 }catch(err){
   if(err.toString().includes("Invalid Session") || err.toString().includes("sessionid")|| err.toString().includes("sessionId")){
-    res.send("There was an error processing your request, Try Again.");
+    res.send("Your chat session has ended, please send a message to start a new session.");
   }
   else{
   res.send("There was an error processing your request, Please contact support..");

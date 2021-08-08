@@ -43,7 +43,7 @@ export const sendMessage = (message, sessionid) => async (dispatch) => {
         const body = {input:message}
         const res = await axios.post("http://localhost:9000/ask", body, {headers: headers});
         console.log(res.data);
-        if(res.data.includes("Try Again")){
+        if(res.data.includes("session")){
             store.dispatch(createSession());
         }
         dispatch({type:MESSAGE_SUCCESS, payload: res.data});

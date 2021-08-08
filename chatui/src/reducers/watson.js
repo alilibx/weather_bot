@@ -20,7 +20,7 @@ const updateState = (state = initialState, action) => {
 
   switch (type) {
     case INPUT_SUCCESS:
-      messages = [...messages, { message: payload, type: "user" }];
+      messages = [...messages, { message: payload, type: "message user" }];
       return {
         ...state,
         messages,
@@ -40,7 +40,7 @@ const updateState = (state = initialState, action) => {
         ...state,
       };
     case MESSAGE_SUCCESS:
-      messages = [...messages, { message: payload, type: "bot" }];
+      messages = [...messages, { message: payload, type: "message bot" }];
       return {
         ...state,
         messages,
