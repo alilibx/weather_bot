@@ -78,6 +78,28 @@ the weather in a certain city at a certain time.
       WEATHER_APIKEY=6115365f8f294414800126a2825e8d1f
       WEATHER_API_BASE_URL=https://api.weatherbit.io/v2.0/
    ```
+6. Configute cloudant credentials in the weatherbot_api/vcab-local.json file from cloudant db configuration in IBM cloud that will look like this
+   ```sh
+      {
+      "services": {
+         "cloudantNoSQLDB": {
+               "credentials":
+               {
+                  "apikey": "2h08yF3hrHXXXXXXXXXXXXXXXXXXXXm1ZKx",
+                  "host": "74aa4570-9b0b-XXXXXXXXXX76c4849cefb2-bluemix.cloudantnosqldb.appdomain.cloud",
+                  "iam_apikey_description": "Auto-generated for key 454dfc6d-8300-45ac-a5ae-4105f246a6bf",
+                  "iam_apikey_name": "wbotcred",
+                  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/dcd77e0e68ff426eb5c1a4ea5c5f0dcf::serviceid:ServiceId-0b969ebXXXXXXX83d0-7308200222e5",
+                  "url": "https://74aa4570-9b0XXXXXXX-76c4849cefb2-bluemix.cloudantnosqldb.appdomain.cloud",
+                  "username": "74aa4570XXXXXXXd-76c4849cefb2-bluemix"
+               }
+               ,
+               "label": "cloudantNoSQLDB"
+         }
+      }
+   }
+   ```
 
 6. Run Chatui react app from command
    ```sh
