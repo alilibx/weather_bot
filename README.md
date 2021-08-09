@@ -78,7 +78,7 @@ the weather in a certain city at a certain time.
       WEATHER_APIKEY=6115365f8f294414800126a2825e8d1f
       WEATHER_API_BASE_URL=https://api.weatherbit.io/v2.0/
    ```
-6. Configute cloudant credentials in the weatherbot_api/vcab-local.json file from cloudant db configuration in IBM cloud that will look like this
+6. Configure cloudant credentials in the weatherbot_api/vcab-local.json file from cloudant db configuration in IBM cloud that will look like this
    ```sh
       {
       "services": {
